@@ -38,4 +38,14 @@ class StorageService {
       Iterable.generate(length, (_) => chars.codeUnitAt(rand.nextInt(chars.length))),
     );
   }
+  // ✅ Menyimpan file video dengan nama file yang ditentukan
+  static Future<String> saveVideoWithCustomName(XFile file, String fileName) async {
+    final dir = Directory('/storage/emulated/0/Movies/ReadLexi');
+    if (!await dir.exists()) await dir.create(recursive: true);
+
+    final newPath = '${dir.path}/$fileName';
+    await File(file.path).copy(newPath);
+    return newPath;
+  }
+
 }
