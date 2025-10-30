@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Mengenal Huruf",
+    "type": "reading",
+    "active": 1
+  },
+  {
+    "id": 2,
+    "title": "Kata Dasar",
+    "type": "spelling",
+    "active": 1
+  },
+  {
+    "id": 3,
+    "title": "Cerita Pendek",
+    "type": "story",
+    "active": 0
+  }
+]
